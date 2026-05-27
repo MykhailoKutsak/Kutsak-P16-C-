@@ -1,0 +1,28 @@
+#include <iostream>
+
+int main() {
+    int size = 0;
+    std::cout << "Enter array size:";
+    std::cin >> size;
+
+    // Перевірка на коректність
+    if (size <= 0) {
+        std::cout << "Array size must be bigger than 0" << std::endl;
+        return 1;
+    }
+
+    int* arr = new int[size];
+    for (int i = 0; i < size; ++i) {
+        arr[i] = (size - 1) - i;
+    }
+
+    std::cout << "Array elements:";
+    for (int i = 0; i < size; ++i) {
+        std::cout << arr[i] << " ";
+    }
+    std::cout << std::endl;
+    delete[] arr;
+    arr = nullptr;
+
+    return 0;
+}
