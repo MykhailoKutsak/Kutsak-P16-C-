@@ -1,0 +1,60 @@
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+
+void task1()
+{
+    cout << "\ntask1\n";
+
+    char* c = new char;
+    bool* b = new bool;
+    short* s = new short;
+    int* i = new int;
+    long* l = new long;
+    float* f = new float;
+    double* d = new double;
+
+    cout << "Enter char:";
+    cin >> *c;
+
+    cout << "Enter bool:";
+    cin >> *b;
+
+    cout << "Enter short:";
+    cin >> *s;
+
+    cout << "Enter int:";
+    cin >> *i;
+
+    cout << "Enter long:";
+    cin >> *l;
+
+    cout << "Enter float:";
+    cin >> *f;
+
+    cout << "Enter double:";
+    cin >> *d;
+
+    cout << "\nValues:\n";
+    cout << *c << endl;
+    cout << *b << endl;
+    cout << *s << endl;
+    cout << *i << endl;
+    cout << *l << endl;
+    cout << *f << endl;
+    cout << *d << endl;
+
+    delete c;
+    delete b;
+    delete s;
+    delete i;
+    delete l;
+    delete f;
+    delete d;
+}
+
+int main() {
+    task1(); // Викликаємо вашу функцію тут
+    return 0;
+}
