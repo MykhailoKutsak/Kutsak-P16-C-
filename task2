@@ -1,0 +1,26 @@
+#include <iostream>
+
+void task2()
+{
+    std::cout << "\nTask 2\n";
+
+    auto* ptr = new double;
+    double& ref = *ptr;
+
+    // Ввід значення через посилання
+    std::cout << "Enter double value: ";
+    std::cin >> ref;
+
+    // Вивід через посилання
+    std::cout << "Value = " << ref << std::endl;
+
+    std::cout << "Pointer value = " << *ptr << std::endl;
+
+    delete ptr;
+}
+
+int main()
+{
+    task2();
+    return 0;
+}
